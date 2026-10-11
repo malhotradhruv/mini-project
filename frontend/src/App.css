@@ -1,13 +1,25 @@
-/* Custom SOC Dashboard utility animations and glows */
-@keyframes pulseGlow {
-  0%, 100% {
-    opacity: 0.8;
-  }
-  50% {
-    opacity: 0.3;
-  }
+/* App.css — Sentinel-AI SOC supplementary animation overrides */
+
+/* Ensure any legacy radar-sweep references animate correctly */
+.radar-sweep {
+  animation: radar-sweep 4s linear infinite;
 }
 
-.radar-sweep {
-  animation: pulseGlow 3s ease-in-out infinite;
+/* Chart / SVG glow override */
+.recharts-cartesian-grid line {
+  stroke: rgba(255, 255, 255, 0.04) !important;
+}
+
+/* React Flow canvas override — obsidian background */
+.react-flow {
+  background: var(--canvas) !important;
+}
+
+.react-flow__background {
+  background: var(--canvas) !important;
+}
+
+.react-flow__background pattern circle,
+.react-flow__background pattern rect {
+  fill: rgba(255, 255, 255, 0.06) !important;
 }

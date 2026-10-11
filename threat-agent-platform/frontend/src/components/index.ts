@@ -9,3 +9,4 @@ export type { AgentStatus } from './AgentSwarmCards';
 
 export { AttackTopologyGraph } from './AttackTopologyGraph';
 export { SOARPlaybook } from './SOARPlaybook';
+export { Sidebar } from './Sidebar';

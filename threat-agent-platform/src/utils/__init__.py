@@ -7,11 +7,14 @@ from .tools import (
     NISTVulnerabilityEngine,
 )
 
+from .mock_engine import OfflineResilienceEngine
+
 __all__ = [
     "VectorStoreManager",
     "NVDClient",
     "ThreatIntelligenceTools",
     "SemanticVectorStore",
     "NISTVulnerabilityEngine",
+    "OfflineResilienceEngine",
 ]
 

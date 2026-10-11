@@ -1,28 +1,28 @@
-﻿# Secrets & Environment variables
+﻿# Environment variables and secrets
 .env
 *.env
 .env.*
 
-# Python caches & virtual environments
+# Python caches and virtual environments
+venv/
+.venv/
 __pycache__/
 *.py[cod]
 *.class
-venv/
-.venv/
-env/
+*.sqlite3
+*.db
+data/*.db
+data/indices/*.bin
 
-# Node & Frontend builds
-node_modules/
+# Node.js dependencies and build output
 frontend/node_modules/
-dist/
+node_modules/
 frontend/dist/
+dist/
 .vite/
 
-# Embeddings & Binary vectors
-*.bin
-*.meta.npy
-data/indices/
-
-# System files
+# IDE and OS files
+.vscode/
+.idea/
 .DS_Store
 Thumbs.db
