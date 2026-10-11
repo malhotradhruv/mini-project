@@ -1,0 +1,13 @@
+/* Custom SOC Dashboard utility animations and glows */
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+.radar-sweep {
+  animation: pulseGlow 3s ease-in-out infinite;
+}

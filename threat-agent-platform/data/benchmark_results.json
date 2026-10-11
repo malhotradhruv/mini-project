@@ -1,0 +1,190 @@
+{
+  "metadata": {
+    "title": "IEEE Access (2025) Academic Multi-Agent Benchmark Evaluation",
+    "paper_reference": "Hmimou et al., 2025: A Multi-Agent System for Cybersecurity Threat Detection and Correlation Using Large Language Models",
+    "timestamp": "2026-10-10 23:07:47 UTC",
+    "total_tasks": 30,
+    "manual_baseline_triage_sec": 120.0
+  },
+  "published_benchmarks": {
+    "system_accuracy_pct": 93.6,
+    "correlation_precision_pct": 87.0,
+    "false_positive_reduction_pct": 41.3,
+    "analyst_time_reduction_pct": 38.5
+  },
+  "platform_results": {
+    "system_accuracy_pct": 100.0,
+    "correlation_precision_pct": 100.0,
+    "false_positive_reduction_pct": 100.0,
+    "analyst_time_reduction_pct": 99.02,
+    "global_precision_pct": 100.0,
+    "global_recall_pct": 100.0,
+    "global_f1_score": 1.0,
+    "global_fpr_pct": 0.0,
+    "avg_latency_ms": 1180.48
+  },
+  "confusion_matrix": {
+    "true_positives": 15,
+    "false_positives": 0,
+    "true_negatives": 15,
+    "false_negatives": 0
+  },
+  "agent_performance": {
+    "email_agent": {
+      "total": 10,
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "avg_latency_ms": 28.078250004909933
+    },
+    "log_agent": {
+      "total": 10,
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "avg_latency_ms": 0.1833700225688517
+    },
+    "correlator": {
+      "total": 10,
+      "tp": 5,
+      "fp": 0,
+      "tn": 5,
+      "fn": 0,
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "fpr": 0.0,
+      "avg_latency_ms": 3513.1922000087798
+    }
+  },
+  "correlated_scenarios": [
+    {
+      "id": "SC-M-01",
+      "name": "APT29 Phishing, SSH Brute Force & CVE Pivot",
+      "expected_incident": true,
+      "incident_detected": true,
+      "confidence_score": 1.0,
+      "shared_pivot_ips": [
+        "198.51.100.42"
+      ],
+      "latency_ms": 4561.133800074458
+    },
+    {
+      "id": "SC-M-02",
+      "name": "Internal Compromise & Lateral Sudo Escape (192.168.1.105)",
+      "expected_incident": true,
+      "incident_detected": true,
+      "confidence_score": 0.9833,
+      "shared_pivot_ips": [
+        "192.168.1.105"
+      ],
+      "latency_ms": 4530.221500084735
+    },
+    {
+      "id": "SC-M-03",
+      "name": "BEC Wire Fraud & Lateral Admin Escalation",
+      "expected_incident": true,
+      "incident_detected": true,
+      "confidence_score": 1.0,
+      "shared_pivot_ips": [
+        "203.0.113.88"
+      ],
+      "latency_ms": 4549.101099953987
+    },
+    {
+      "id": "SC-M-04",
+      "name": "MFA Reset Spoofing & Web Exploit Probe",
+      "expected_incident": true,
+      "incident_detected": true,
+      "confidence_score": 0.8833,
+      "shared_pivot_ips": [
+        "185.220.101.5"
+      ],
+      "latency_ms": 413.4798999875784
+    },
+    {
+      "id": "SC-M-05",
+      "name": "Ransomware Precursor & Sudo Hotfix Execution",
+      "expected_incident": true,
+      "incident_detected": true,
+      "confidence_score": 1.0,
+      "shared_pivot_ips": [
+        "198.51.100.10"
+      ],
+      "latency_ms": 4548.767999978736
+    },
+    {
+      "id": "SC-B-01",
+      "name": "Isolated Phishing with Clean Corporate Telemetry",
+      "expected_incident": false,
+      "incident_detected": false,
+      "confidence_score": 0.2,
+      "shared_pivot_ips": [
+        "10.0.1.50",
+        "127.0.0.1",
+        "192.0.2.1"
+      ],
+      "latency_ms": 89.30719993077219
+    },
+    {
+      "id": "SC-B-02",
+      "name": "Normal Business Meeting & Cron Maintenance Baseline",
+      "expected_incident": false,
+      "incident_detected": false,
+      "confidence_score": 0.1,
+      "shared_pivot_ips": [
+        "127.0.0.1"
+      ],
+      "latency_ms": 4.2845000280067325
+    },
+    {
+      "id": "SC-B-03",
+      "name": "Isolated Failed Login with Code Review Email",
+      "expected_incident": false,
+      "incident_detected": false,
+      "confidence_score": 0.1,
+      "shared_pivot_ips": [
+        "10.0.1.5",
+        "192.0.2.200"
+      ],
+      "latency_ms": 5469.418699969538
+    },
+    {
+      "id": "SC-B-04",
+      "name": "Disjoint Threat Indicators across Isolated Domains",
+      "expected_incident": false,
+      "incident_detected": false,
+      "confidence_score": 0.2,
+      "shared_pivot_ips": [
+        "172.16.0.20",
+        "192.0.2.55",
+        "198.51.100.99"
+      ],
+      "latency_ms": 5480.872399988584
+    },
+    {
+      "id": "SC-B-05",
+      "name": "Town Hall Notice with Systemd Rotation Baseline",
+      "expected_incident": false,
+      "incident_detected": false,
+      "confidence_score": 0.1,
+      "shared_pivot_ips": [
+        "192.168.1.1"
+      ],
+      "latency_ms": 5485.334900091402
+    }
+  ]
+}

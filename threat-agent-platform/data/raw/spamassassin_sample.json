@@ -1,0 +1,57 @@
+[
+  {
+    "id": "email_001",
+    "subject": "CRITICAL: Urgent Security Patch Installation Required Immediately",
+    "sender": "admin-alert@internal-cisco-patch.top",
+    "recipient": "employee@enterprise.corp",
+    "timestamp": "2026-10-10T08:14:22Z",
+    "headers": {
+      "Received": "from mail-out.attacker-relay.net ([198.51.100.42])",
+      "Authentication-Results": "spf=fail (sender IP is 198.51.100.42); dkim=none; dmarc=fail",
+      "X-Spam-Status": "Yes, score=8.4 required=5.0"
+    },
+    "body": "Dear Enterprise User,\n\nA zero-day vulnerability (CVE-2026-2184) has been detected affecting corporate VPN configurations. All staff must download and apply the mandatory hotfix patch immediately to prevent remote network isolation.\n\nDownload Official Hotfix: https://update-internal-patch.top/download/vpn_hotfix.exe\n\nFailure to update within 2 hours will result in Active Directory account lock.\n\nRegards,\nIT Infrastructure & Security Operations",
+    "is_phishing": true,
+    "indicators": [
+      "SPF/DMARC failure",
+      "Urgency trigger ('within 2 hours')",
+      "Suspicious top-level domain (.top)",
+      "Executable link download (.exe)"
+    ]
+  },
+  {
+    "id": "email_002",
+    "subject": "CONFIDENTIAL: Wire Payment Disbursement For Acquisition Contract",
+    "sender": "ceo-direct@executive-board-corp.com",
+    "recipient": "finance-treasury@enterprise.corp",
+    "timestamp": "2026-10-10T09:30:15Z",
+    "headers": {
+      "Received": "from vps-relayer-node.cloud ([203.0.113.88])",
+      "Authentication-Results": "spf=neutral; dkim=neutral; dmarc=none",
+      "X-Spam-Status": "Yes, score=6.9 required=5.0"
+    },
+    "body": "Good morning,\n\nI am currently attending closed-door M&A negotiations and unavailable by telephone. An initial escrow deposit of $74,200 must be wired before 14:00 today to secure vendor exclusivity.\n\nBeneficiary details:\nBank: Offshore Mercantile Bank\nRouting: 021000089\nAccount: 884729103\nSwift: MERCOFFXXXX\n\nPlease execute immediately and email confirmation receipt. Do not verify via telephone due to regulatory non-disclosure covenants.\n\nBest,\nChief Executive Officer",
+    "is_phishing": true,
+    "indicators": [
+      "Executive impersonation / BEC",
+      "Wire transfer urgency",
+      "Telephone verification blackout instruction",
+      "Lookalike external sender domain"
+    ]
+  },
+  {
+    "id": "email_003",
+    "subject": "Engineering Sprint 42 Retrospective and Planning Agenda",
+    "sender": "sarah.chen@enterprise.corp",
+    "recipient": "dev-team@enterprise.corp",
+    "timestamp": "2026-10-10T11:00:00Z",
+    "headers": {
+      "Received": "from mail-corp.enterprise.corp ([10.0.4.15])",
+      "Authentication-Results": "spf=pass; dkim=pass header.i=@enterprise.corp; dmarc=pass",
+      "X-Spam-Status": "No, score=-2.1 required=5.0"
+    },
+    "body": "Hi everyone,\n\nHere is our agenda for the Sprint 42 retrospective this afternoon at 3:00 PM in Conference Room B and Google Meet:\n1. Review of PRs merged for authentication refactor\n2. Metric review: 99.98% API uptime over the past sprint\n3. Action items and blocker discussion\n\nPlease make sure your Jira status updates are current prior to the meeting.\n\nThanks,\nSarah Chen\nLead Software Engineer",
+    "is_phishing": false,
+    "indicators": []
+  }
+]
